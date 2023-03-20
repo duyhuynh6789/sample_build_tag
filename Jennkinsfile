@@ -12,4 +12,7 @@ node {
            ]
         )
     }
+    stage('Show') {
+        sh 'cat Jennkinsfile'
+    }
  }
