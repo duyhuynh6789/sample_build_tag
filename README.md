@@ -1,2 +1,2 @@
 # sample_build_tag
-Jenkin deploy
+Jenkin deploy v2
