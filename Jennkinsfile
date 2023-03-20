@@ -13,6 +13,6 @@ node {
         )
     }
     stage('Show') {
-        sh 'cat Jennkinsfile'
+        sh 'cat README.md'
     }
  }
