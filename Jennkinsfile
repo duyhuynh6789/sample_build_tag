@@ -1,0 +1,15 @@
+node {
+    def commitId = "git-"
+    stage('Preparation') {
+      checkout scmGit(
+        branches: [[name: '*/main']], 
+        browser: gitWeb('https://github.com/duyhuynh6789/sample_build_tag'), 
+        extensions: [], 
+        userRemoteConfigs: [
+          [
+            credentialsId: 'jenkin_ssh', 
+            url: 'git@github.com:duyhuynh6789/sample_build_tag.git']
+           ]
+        )
+    }
+ }
