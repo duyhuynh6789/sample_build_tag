@@ -2,7 +2,7 @@ node {
     def commitId = "git-"
     stage('Preparation') {
       checkout scmGit(
-        branches: [[name: '*/main']], 
+        branches: [[name: "${params.BRANCH}"]], 
         browser: gitWeb('https://github.com/duyhuynh6789/sample_build_tag'), 
         extensions: [], 
         userRemoteConfigs: [
